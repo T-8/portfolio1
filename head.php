@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-        <title>Memorand</title>
+        <title>MemoLand</title>
     </head>
     
     <body>

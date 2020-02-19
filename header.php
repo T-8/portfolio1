@@ -2,7 +2,7 @@
         <header>
             <h1 class="header-left">
                 <a href="index.php" style="text-decoration:none;">
-                    <i class="fas fa-paste"></i>Memorand
+                    <i class="fas fa-paste"></i>MemoLand
                 </a>
             </h1>
             

@@ -39,13 +39,20 @@ header{
 }
 
 .header-left{
-    color: white;
     font-size: 50px;
     margin-left: 20px;
     color: rgb(0,128,128);
     font-weight: bold;
     display: inline-block;
     width: 100%;
+}
+
+.header-left a{
+    color: white;
+}
+
+.header-left a i{
+    color: #228B22;
 }
 
 .header-right{
@@ -57,7 +64,11 @@ header li{
     width:150px;
     text-align: center;
     float: left;
-    text-decoration: none;
+}
+
+header li a{
+    font-weight: bold;
+    color: white;
 }
 
 /*--index--------------------------------------------*/
@@ -525,7 +536,7 @@ form a{
     background: rgba(95,158,160,0.9);;
     color: #333;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.9);
-    transform: translateY(-0.2em);
+    transform: translateY(-1em);
 }
 
 .panel-value{
