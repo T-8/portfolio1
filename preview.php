@@ -54,9 +54,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
                     <img src="<?php echo $noteData['icon'];?>" alt="" style="<?php if(empty($noteData['icon'])) echo 'display:none;'?>">
                   </div>
               
-                  <a href="mypage.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&name='.$noteData['name'] : '?name='.$noteData['name'];?>" style="color:black;">
-                      <?php echo $noteData['name'];?>
-                  </a>
+                  <p><?php echo $noteData['name'];?></p>
               
           </div>
         

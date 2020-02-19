@@ -121,7 +121,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             foreach ($noteData['data'] as $key => $val):
           ?>
             
-          <a class="panel" href="registNote.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$val['note_id'] : '?note_id='.$val['note_id'];?>">
+          <a class="panel" href="preview.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$val['note_id'] : '?note_id='.$val['note_id'];?>">
               
             <div class="panel-value">
                 
