@@ -91,19 +91,23 @@
       </section>
     
         <span class="none">
-          <p><?php if( empty($noteData['data']) ) echo 'メモがありません。'?></p>
+          <p>
+              <?php if( empty($noteData['data']) ) echo 'メモがありません。'?>
+          </p>
+            
           <a href="registNote.php" style="text-decoration:none;">
               <?php if( empty($noteData['data']) ) echo 'メモ作成へ'?>
           </a>
         </span>
-        
+    
+    
         <section class="panel-list">
             
           <?php
             foreach ($noteData['data'] as $key => $val):
           ?>
             
-          <a class="panel js-panel" href="registNote.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$val['note_id'] : '?note_id='.$val['note_id'];?>">
+          <a class="panel" href="preview.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$val['note_id'] : '?note_id='.$val['note_id'];?>">
               
             <div class="panel-value">
                 

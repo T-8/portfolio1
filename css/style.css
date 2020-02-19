@@ -48,7 +48,7 @@ header{
 }
 
 .header-left a{
-    color: white;
+    color: #DCDCDC;
 }
 
 .header-left a i{
@@ -68,7 +68,7 @@ header li{
 
 header li a{
     font-weight: bold;
-    color: white;
+    color: #DCDCDC;
 }
 
 /*--index--------------------------------------------*/
@@ -675,7 +675,7 @@ div .panel-title{
 .one-note-left{
     float: left;
     margin-right: 20px;
-    background: rgba(153,204,204,0.8);
+    background: rgba(153,204,204,0.9);
     padding: 15px;
 }
 
@@ -742,7 +742,7 @@ div .panel-title{
 
 .one-note-right{
     float: left;
-    background: rgba(153,204,204,0.8);
+    background: rgba(153,204,204,0.9);
 }
 
 .one-note-text{

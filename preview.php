@@ -6,9 +6,18 @@ debugStart();
 
 require('auth.php');
 
-$note_id = $_SESSION['note_id'];
+$note_id = ( !empty($_GET['note_id']) ) ? $_GET['note_id'] : '' ;
+
+$_SESSION['note_id'] = $note_id;
+
+$dbUserData = ( !empty($note_id) ) ? getNote($_SESSION['user_id'], $note_id) : '';
 
 $noteData = getOneNote($note_id);
+
+  if(!empty($note_id) && empty($dbUserData)){
+    debug('他ユーザーのノートです');
+    header("Location:oneNote.php"); 
+  }
 
 debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<');
 ?>
@@ -50,13 +59,6 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
                   </a>
               
           </div>
-            
-          <div class="one-note-like">
-              
-            <i class="fas fa-thumbs-up js-like <?php if(isLike($_SESSION['user_id'], $note_id)){ echo 'active';}?>" aria-hidden="true" data-noteid="<?php echo $note_id;?>">
-            </i>
-              
-          </div>
         
           <div class="one-note-img">
               <span style="<?php if( !empty($noteData['note_img']) ){echo 'display:none';}?>">
@@ -73,8 +75,8 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
               <?php echo $noteData['note_text'];?>
           </div>
             
-          <a href="noteList.php" class="note-list-back">
-            みんなのメモ一覧
+          <a href="registNote.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$note_id : '?note_id='.$note_id;?>" class="note-list-back">
+            メモ編集へ
           </a>
         </div>
     

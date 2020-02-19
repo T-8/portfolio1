@@ -19,8 +19,8 @@
   $category_id = getMyCategory($_SESSION['user_id']);
 
   if(!empty($note_id) && empty($dbUserData)){
-    debug('GETパラメータのnoteIDが違います。');
-    header("Location:oneNote.php"); 
+    debug('他ユーザーのノートです');
+    header("Location:mypage.php"); 
   }
 
   if( !empty($_POST) ){

@@ -16,6 +16,8 @@
     header("Location:noteList.php"); //トップページへ
   }
 
+  $userFlg = 
+
   $listSpan = 6;
 
   $currentMinNum = (($currentPageNum-1)*$listSpan);
@@ -77,7 +79,7 @@
             foreach ($noteData['data'] as $key => $val):
           ?>
             
-          <a class="panel" href="registNote.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$val['note_id'] : '?note_id='.$val['note_id'];?>">
+          <a class="panel" href="preview.php<?php echo ( !empty(appendGetParam()) ) ? appendGetParam().'&note_id='.$val['note_id'] : '?note_id='.$val['note_id'];?>">
               
             <div class="panel-value">
                 
