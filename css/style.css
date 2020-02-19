@@ -1,0 +1,843 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0px 0px 0px 0px ;
+    padding: 0;
+}
+
+ul{
+    overflow: hidden;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.site-height{
+    min-height: 600px;
+}
+
+.background{
+    min-height: 600px;
+    overflow: hidden;
+    background-image: url(../img/top-baner2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/*--header--------------------------------------------*/
+
+header{
+    height: 120px;
+    background: black;
+}
+
+.header-left{
+    color: white;
+    font-size: 50px;
+    margin-left: 20px;
+    color: rgb(0,128,128);
+    font-weight: bold;
+    display: inline-block;
+    width: 100%;
+}
+
+.header-right{
+    float: right;
+    font-size: 15px;
+}
+
+header li{
+    width:150px;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+}
+
+/*--index--------------------------------------------*/
+.site-height{
+    min-height: 600px;
+}
+
+.top-baner{
+    background: linear-gradient(rgba(0,0,0,0) 30%, rgba(51, 51, 51, 1)), url(../img/top-baner4.jpg) right / cover no-repeat;
+    min-height: 650px;
+}
+
+.bg-text{
+    text-align: center;
+    line-height: 90px;
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: bold;
+    padding-top: 120px;
+    text-shadow: 10px 10px 5px #333;
+    user-select: none;
+}
+
+.first-text{
+    font-size:100px;
+    margin-bottom: 90px;
+}
+
+.about{
+    min-height: 400px;
+    overflow: hidden;
+    background: rgba(51, 51, 51, 1);
+    padding-bottom: 50px;
+}
+
+.about-text{
+    height: 100%;
+    color: white;
+    width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text .about1{
+    text-align: center;
+}
+
+.about-text .about1 h2{
+    font-size: 40px;
+    margin-top: 50px; 
+}
+
+.about-text h3{
+    margin-top: 50px; 
+    text-align: center;
+}
+
+/*--form--------------------------------------------*/
+
+form {
+    background: rgba(95,158,160,0.8);
+    width: 550px;
+    min-height: 550px;
+    margin: 25px auto 25px auto;
+    padding: 10px;
+    overflow: hidden;
+    color: black;
+}
+
+form h2{
+    font-size: 40px;
+    margin: 35px;
+}
+
+form li{
+    margin-bottom: 50px;
+}
+
+label{
+    font-size: 20px;
+}
+
+ul li input{
+    background: none;
+    border: none;
+    border-bottom: solid 1.5px;
+    width: 450px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    height: 50px;
+    background: rgb(0,128,128);
+    font-weight: bold;
+}
+
+.submit{
+    display: block;
+    margin: 0 auto;
+}
+
+.err{
+    margin-left: 20px;
+    color: #FF4F02;
+    font-size: 20px;
+}
+
+.success{
+    margin-left: 20px;
+    color: #00008B;
+    font-size: 20px;
+}
+
+form a{
+    color: #2F4F4F;
+}
+
+/*--login--------------------------------------------*/
+.login-form{
+    min-height: 450px;
+    margin-top: 40px;
+}
+
+/*--メッセージ--------------------------------------------*/
+.msg-slide{
+    color: white;
+    font-size: 25px;
+    background: rgba(0,128,128,0.6);
+    width:100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    position: fixed;
+    top:0;
+}
+
+/*--mypage--------------------------------------------*/
+
+.mypage-area{
+    display: table;
+    margin: 50px auto 50px auto;
+}
+
+.profile{
+    width: 550px;
+    min-height: 450px;
+    background: rgba(211,211,211,0.9);
+    float: left;
+}
+
+.sidebar{
+    width: 200px;
+    height: 450px;
+    background: #c0c0c0;
+    float: left;
+    margin-left: 20px;
+}
+
+.header-area{
+    background-image: url(../img/header2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 230px;
+    display: block;
+}
+
+.prof-header-img{
+    width: 100%;
+    height: 100%;
+}
+
+.prof-icon-img{
+    width: 100%;
+    height: 100%;
+}
+
+.icon-area{
+    background-image: url(../img/user2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px 0 0 50px;
+}
+
+.prof-name{
+    width: 350px;
+    margin: 10px 0 0 0px;
+}
+
+.name{
+    margin-left: 20px;
+    display: table;
+    font-size: 30px;
+}
+
+.prof-edit-area{
+    float: right;
+    margin: 10px 10px 0 0;
+    width: 190px;
+    text-align: center;
+}
+
+.prof-edit{
+    display: block;
+}
+
+.prof-comment{
+    margin: 20px auto 30px auto;
+    width: 420px;
+    display: block;
+}
+
+.comment{
+    /*min-height: 150px;*/
+}
+
+.side-ul{
+    margin-top: 30px; 
+}
+
+.side-ul li{
+    margin-top: 30px;
+    font-size: 15px;
+}
+
+/*--prof-edit--------------------------------------------*/
+.prof-form{
+    width:650px;
+}
+
+.prof-form-ul{
+    font-size: 30px;
+}
+
+.prof-form-ul li input{
+    width: 550px;
+}
+
+.header-drop{
+    width: 550px;
+    height: 230px;
+    background: #f6f5f4;
+    color: #ccc;
+    text-align: center;
+    line-height: 230px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.header-input{
+    opacity:0;
+    width:550px;
+    height:230px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+.icon-drop{
+    width: 150px;
+    height: 150px;
+    background: #f6f5f4;
+    color: #ccc;
+    text-align: center;
+    line-height: 150px;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-drop span{
+    font-size: 10px;
+}
+
+.icon-input{
+    opacity:0;
+    height:120px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+.header-img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.icon-img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+/*--withdraw--------------------------------------------*/
+.withdraw-form{
+    min-height: 300px;
+    margin-top: 150px;
+}
+
+.withdraw-text{
+    font-size: 30px;
+    padding: 30px;
+}
+
+.withdraw-btn{
+    margin: 20px auto;
+    display: block;
+}
+
+.mypageBack{
+    float: right;
+}
+
+/*--registNote--------------------------------------------*/
+.note-drop{
+    width: 450px;
+    height: 250px;
+    background: #f6f5f4;
+    color: #ccc;
+    text-align: center;
+    line-height: 250px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.note-input{
+    opacity: 0;
+    width:450px;
+    height:250px;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 2;
+}
+
+.note-img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+
+.note-form-ul{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.category-regist{
+    margin-left: 20px;
+    color: #2F4F4F;
+}
+
+.delete{
+    float: right;
+    font-size: 20px;
+}
+
+/*--registcategory--------------------------------------------*/
+.category-form{
+    min-height: 350px;
+    margin-top: 120px;
+}
+
+.category-input{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.note-back{
+    color: #2F4F4F;
+    font-size: 20px;
+    float: right;
+}
+
+.delete-category{
+    color: #2F4F4F;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*--deletecategory--------------------------------------------*/
+.category-select{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.category-select p{
+    width: 450px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*--myNoteList--------------------------------------------*/
+.list-form{
+    min-height: 100px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list-form-left{
+    width: 350px;
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.list-form-right{
+    width: 150px;
+    float: right;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.list-form p{
+    text-align: center;
+    font-size: 25px;
+}
+
+.num{
+    font-weight: bold;
+}
+
+.list-submit{
+    min-width: 50px;
+    height: 35px;
+}
+
+.list-select{
+    width: 200px;
+    height: 35px;
+}
+
+.panel-list{
+    width: 1250px;
+    margin: 0 auto 0 auto;
+}
+
+.panel-list .panel{
+    width: 600px;
+    height: 290px;
+    display: block;
+    margin-right: 20px;
+    float: left;
+    background: rgba(211,211,211,0.9);
+    text-decoration: none;
+    transition: all 0.5s ease 0s;
+}
+
+.panel-list .panel:hover{
+    background: rgba(95,158,160,0.9);;
+    color: #333;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.9);
+    transform: translateY(-0.2em);
+}
+
+.panel-value{
+    overflow: hidden;
+}
+
+.panel-left{
+    float: left;
+    margin: 20px 5px 0 20px;
+}
+
+div .panel-title{
+    font-size: 25px;
+    font-weight: bold;
+    width: 550px;
+    margin:5px 0 0 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel-left .panel-category{
+    font-size: 20px;
+    margin-top: 20px;
+    width: 230px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.panel-left .panel-user{
+    overflow: hidden;
+    line-height: 50px;
+}
+
+.panel-left .panel-user div{
+    float: left;
+}
+
+.panel-left .panel-user .user-name{
+    float: left;
+    margin-left: 5px;
+}
+
+.panel-left .panel-icon{
+    background-image: url(../img/user2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+.panel-left .panel-icon img{
+    width: 100%;
+    height: 100%;
+}
+
+.panel-right{
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.panel-right .panel-img{
+    width: 320px;
+    height: 230px;
+    background: black;
+    text-align: center;
+    line-height: 225px;
+    font-size: 20px;
+    color: #2E8B57;
+    font-weight: bold;
+}
+
+.panel-right img{
+    width: 100%;
+    height: 100%;
+}
+
+.none{
+    text-align: center;
+}
+
+.none p{
+    font-size: 30px;
+    color: white;
+}
+
+.none a{
+    font-size: 20px;
+    color: #99FFFF;
+    display: table;
+    margin: 0 auto;
+}
+
+/*--noteList--------------------------------------------*/
+.search-form{
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.search-form-left{
+    width: 350px;
+    float: left;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.saerch-form-right{
+    width: 150px;
+    float: right;
+    margin-top: 30px;
+    font-size: 17px;
+}
+
+.panel-user{
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.note-list-like{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/*--oneNote--------------------------------------------*/
+.one-note-area{
+    margin: 50px 0 50px 0;
+}
+
+.one-note{
+    margin: 0 auto;
+    overflow: hidden;
+    display: table;
+}
+
+.one-note-left{
+    float: left;
+    margin-right: 20px;
+    background: rgba(153,204,204,0.8);
+    padding: 15px;
+}
+
+.one-note-title{
+    font-size: 40px;
+    width: 500px;
+}
+
+.one-note-category p{
+    font-size: 20px;
+}
+
+.one-note-user{
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.one-note-user{
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 80px;
+}
+
+.one-note-user .one-note-icon{
+    float: left;
+    background-image: url(../img/user2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80px;
+    height: 80px;
+}
+
+.one-note-user .one-note-icon img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.one-note-user a{
+    float: left;
+    margin-left: 10px;
+}
+
+.one-note-img{
+    background: black;
+    width: 400px;
+    height: 250px;
+    margin: 20px auto 0 auto;
+    color: #2E8B57;
+    text-align: center;
+    line-height: 245px;
+    font-size: 30px;
+    display: block;
+}
+
+.one-note-img span{
+    user-select: none;
+}
+
+.one-note-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.one-note-right{
+    float: left;
+    background: rgba(153,204,204,0.8);
+}
+
+.one-note-text{
+    width: 500px;
+    min-height: 550px;
+    font-size: 20px;
+    padding: 30px;
+}
+
+.note-list-back{
+    font-size: 20px;
+    color: #2F4F4F;
+    float: right;
+}
+
+.one-note-like{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.one-note-like i:hover{
+    cursor:pointer;
+}
+
+.one-note-like .active{
+    color: #CC3300;
+}
+
+/*--deletenote--------------------------------------------*/
+.delete-note-form{
+    min-height: 300px;
+    margin: 150px auto 0 auto;
+}
+
+.delete-note-form p{
+    text-align: center;
+    font-size: 20px;
+}
+
+/*--oneUser--------------------------------------------*/
+
+
+.one-user-profile{
+    width: 600px;
+    min-height: 450px;
+    background: rgba(211,211,211,0.9);
+    margin: 0 auto 20px auto;
+}
+
+.one-user-profile .prof-name{
+    margin-top:40px;
+}
+
+/*--pagination--------------------------------------------*/
+.pagination{
+    text-align: center;
+    width: 100%;
+}
+
+.pagination-list{
+    overflow: hidden;
+    display: inline-block;
+}
+
+.list-item{
+    background: rgba(211,211,211,0.9);
+    float: left;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.pagination-list .active{
+    background: rgba(0,128,128,0.9); 
+}
+
+.list-item a{
+    color:#2F4F4F;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+}
+
+/*--footer--------------------------------------------*/
+footer{
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: black;
+    color: white;
+    font-size: 20px;
+}
+
+
+.font-icon{
+    font-size: 20px;
+}
+
+.fa-space-station-moon-alt{
+    font-size: 30px;
+}
+
+#icon{
+    width: 20px;
+    height:50px;
+    
+}
