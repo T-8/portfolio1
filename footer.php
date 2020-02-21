@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer id="footer">
   Copyright <a href="http://portfolio-w.com/">作者</a>. All Rights Reserved.
 </footer>
 

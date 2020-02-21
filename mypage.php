@@ -20,9 +20,9 @@
   require('head.php'); 
 ?>
 
-  <p id="js-show-msg" style="display:none;" class="msg-slide">
+ <p id="js-show-msg" style="display:none;" class="msg-slide">
     <?php echo getSessionFlash('msg_success'); ?>
-  </p>
+ </p>
 
 <?php
   require('header.php');
@@ -46,7 +46,7 @@
       <div class="prof-edit">
         <a href="profEdit.php" style="text-decoration:none">プロフィール編集</a>
       </div>
-    </label>
+    </label>      
 
     <label class="prof-name">
       <div class="name">

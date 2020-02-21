@@ -12,22 +12,31 @@
       
       try{
           $dbh = dbConnect();
+          
           $sql = 'UPDATE users SET delete_flg = 1 WHERE id = :user_id';
           $data = array(':user_id' => $_SESSION['user_id']);
           $stmt = queryPost($dbh, $sql, $data);
           
-          if($stmt){
+          $sql2 = 'DELETE FROM notes WHERE user_id = :user_id';
+          $data2 = array(':user_id' => $_SESSION['user_id']);
+          $stmt2 = queryPost($dbh, $sql2, $data2);
+          
+          $sql3 = 'DELETE FROM category WHERE user_id = :user_id';
+          $data3 = array(':user_id' => $_SESSION['user_id']);
+          $stmt3 = queryPost($dbh, $sql3, $data3);          
+          
+          if( $stmt && $stmt2 && $stmt3){
               
               session_destroy();
               header("Location:signup.php");
               
           }else{
-              $err['common'] = MSG06;
+              $err['common'] = msg06;
           }
       }catch(Exception $e){
           
        error_log('エラー発生'.$e->getMessage());
-       $err['common'] = MSG06;
+       $err['common'] = msg06;
      }
       
   }

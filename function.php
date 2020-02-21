@@ -169,7 +169,7 @@ function debug($str){
       try{
           
           $dbh = dbConnect();
-          $sql = 'SELECT * FROM notes WHERE user_id = :user_id AND note_id = :note_id AND delete_flg = 0';
+          $sql = 'SELECT * FROM notes LEFT JOIN users ON notes.user_id = users.id WHERE notes.user_id = :user_id AND notes.note_id = :note_id AND users.delete_flg = 0';
           $data = array(':user_id' => $user_id, ':note_id' => $note_id);
           $stmt = queryPost($dbh,$sql,$data);
           
@@ -193,7 +193,7 @@ function debug($str){
       try{
           
           $dbh = dbConnect();
-          $sql = 'SELECT category_id, category FROM category WHERE user_id = :user_id AND delete_flg = 0';
+          $sql = 'SELECT category_id, category FROM category WHERE user_id = :user_id';
           $data = array(':user_id' => $user_id);
           $stmt = queryPost($dbh,$sql,$data);
           
@@ -259,7 +259,7 @@ function getMyNotes($user_id, $category, $currentMinNum, $span = 6){
       return false;
     }
     
-    $sql = 'SELECT n.note_id, n.note, n.note_text, n.note_img, n.user_id, c.category, n.create_date, n.update FROM notes AS n LEFT JOIN category AS c ON n.category_id = c.category_id WHERE n.user_id = :user_id AND n.delete_flg = 0 AND c.delete_flg = 0';
+    $sql = 'SELECT n.note_id, n.note, n.note_text, n.note_img, n.user_id, c.category, n.create_date, n.update FROM notes AS n LEFT JOIN category AS c ON n.category_id = c.category_id WHERE n.user_id = :user_id';
       
     if(!empty($category)) $sql .= ' AND n.category_id = '.$category;
       
@@ -270,9 +270,6 @@ function getMyNotes($user_id, $category, $currentMinNum, $span = 6){
     $data = array(':user_id' => $user_id);
     debug('SQL：'.$sql);
     $stmt = queryPost($dbh, $sql, $data);
-      
-    //$result['total'] = $stmt->rowCount(); //総レコード数
-    //$result['total_page'] = ceil($result['total']/$span); //総ページ数
 
     if($stmt){
       // クエリ結果のデータを全レコードを格納

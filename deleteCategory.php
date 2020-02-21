@@ -98,7 +98,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
           <input type="submit" name="submid" class="submit" value="削除">
         </div>
         
-        <a href="registNote.php" class="note-back" style="text-decoration:none">NOTE作成へ戻る</a>
+        <a href="registNote.php" class="note-back" style="text-decoration:none">メモ作成へ</a>
         
     </form>
     

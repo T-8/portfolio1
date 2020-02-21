@@ -17,7 +17,7 @@ if(!empty($_POST))
   validMaxCate($category,'category');
     
   //このユーザーのカテゴリデーターの名前とiDを代入
-  $categoryUserData = getCategory($_SESSION['user_id']);
+  $categoryUserData = getMyCategory($_SESSION['user_id']);
     
   //登録上限
   if( count($categoryUserData) >= 10 ){
@@ -95,7 +95,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
           <input type="submit" name="submid" class="submit" value="登録">
         </div>
         
-        <a href="registNote.php" class="note-back" style="text-decoration:none">NOTE作成へ</a>
+        <a href="registNote.php" class="note-back" style="text-decoration:none">メモ作成へ</a>
         
     </form>
     

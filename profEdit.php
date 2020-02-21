@@ -117,7 +117,7 @@
             <span class="err"><?PHP if(!empty($err['comment'])) echo $err['comment'];?></span>
             <br>
             <label>
-               <textarea rows="8" cols="45" name="comment"><?php echo getUserData('comment');?></textarea>
+               <textarea rows="8" cols="46" name="comment"><?php echo getUserData('comment');?></textarea>
             </label>
         </li>
             

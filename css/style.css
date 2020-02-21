@@ -17,12 +17,12 @@ a{
     text-decoration: none;
 }
 
-.site-height{
-    min-height: 600px;
+p{
+    margin: 0;
 }
 
 .background{
-    min-height: 600px;
+    min-height: 650px;
     overflow: hidden;
     background-image: url(../img/top-baner2.jpg);
     background-repeat: no-repeat;
@@ -279,7 +279,7 @@ form a{
 }
 
 .prof-comment{
-    margin: 30px auto 30px auto;
+    margin: 40px auto 30px auto;
     width: 420px;
     display: block;
 }
@@ -304,6 +304,8 @@ form a{
 
 .prof-form-ul{
     font-size: 30px;
+    padding: 0 40px;
+    text-align: center;
 }
 
 .prof-form-ul li input{
@@ -426,6 +428,7 @@ form a{
 .note-form-ul{
     font-size: 20px;
     font-weight: bold;
+    padding: 0 40px;
 }
 
 .category-regist{
