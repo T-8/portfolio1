@@ -121,7 +121,7 @@
 
 <div class="background">
     
-    <form method="post" enctype="multipart/form-data">
+    <form method="post" enctype="multipart/form-data" class="regist-note-form">
         
         <h2><?php echo (!$edit_flg) ? 'メモ作成' : 'メモ編集'; ?></h2>
         

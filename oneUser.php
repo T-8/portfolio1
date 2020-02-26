@@ -105,7 +105,7 @@ debug('画面表示処理終了 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             
              <div class="list-form-right">
                   
-               <span class="num"><?php echo sanitize($noteData['total']); ?></span>件表示
+               全<span class="num"><?php echo sanitize($noteData['total']); ?></span>件
               
              </div>
             

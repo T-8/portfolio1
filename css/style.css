@@ -570,21 +570,21 @@ div .panel-title{
     text-overflow: ellipsis;
 }
 
-.panel-left .panel-user{
+.panel-user{
     overflow: hidden;
     line-height: 50px;
 }
 
-.panel-left .panel-user div{
+.panel-user div{
     float: left;
 }
 
-.panel-left .panel-user .user-name{
+.panel-user .user-name{
     float: left;
     margin-left: 5px;
 }
 
-.panel-left .panel-icon{
+.panel-user .panel-icon{
     background-image: url(../img/user2.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -613,7 +613,7 @@ div .panel-title{
     font-weight: bold;
 }
 
-.panel-right img{
+.panel-user img{
     width: 100%;
     height: 100%;
 }
@@ -853,5 +853,346 @@ footer{
 #icon{
     width: 20px;
     height:50px;
+    
+}
+
+/*--------------------------------------------
+--レスポンジブ-----------------------------------
+--------------------------------------------*/
+
+@media screen and (max-width:480px){//---------スマホ----------------
+    
+.background{
+    min-height: 750px;
+}
+    
+ul{
+    padding: 0;
+        
+}
+    
+/*--header--------------------------------------------*/
+
+header{
+    height: 120px;
+    background: black;
+}
+
+.header-left{
+    font-size: 40px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.header-left a{
+    color: #DCDCDC;
+}
+
+.header-left a i{
+    color: #228B22;
+}
+
+.header-right{
+    float: right;
+    font-size: 15px;
+}
+
+header li{
+    width:100px;
+    text-align: center;
+    float: left;
+}
+
+header li a{
+    font-weight: bold;
+    color: #DCDCDC;
+}
+
+    
+/*--index--------------------------------------------*/
+.bg-text{
+    line-height: 50px;
+    font-size: 30px;
+    padding-top: 150px;
+}
+
+.first-text{
+    font-size:60px;
+    margin-bottom: 90px;
+}
+
+.about-text{
+    font-size: 18px;
+}
+
+.about-text .about1 h2{
+    font-size: 35px;
+}
+    
+/*--form--------------------------------------------*/
+
+form {
+    width: 300px;
+}
+    
+form h2{
+    margin-left: 0;
+    font-size: 35px;
+}
+    
+ul li input{
+     width: 250px;
+}
+/*--mypage--------------------------------------------*/
+
+.profile{
+    width: 360px;
+    float: none;
+    margin: 0 auto;
+}
+
+.sidebar{
+    width: 360px;
+    height: 180px;
+    float: none;
+    margin: 0 auto;
+}
+    
+.icon-area{
+    margin: 10px 0 0 30px;
+}
+
+
+.prof-comment{
+    padding: 10px;
+    margin-top: 0; 
+}
+
+.side-ul{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.side-ul li{
+    margin-top: 30px;
+    font-size: 15px;
+    width: 110px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+/*--prof-edit--------------------------------------------*/
+.prof-form{
+    width:350px;
+}
+
+.prof-form-ul li input{
+    width: 250px;
+}
+
+.header-drop{
+    height: 150px;
+}
+
+.icon-drop{
+    width: 120px;
+    height: 120px;
+}
+
+    textarea{
+        width: 250px;
+    }
+    
+/*--registnote--------------------------------------------*/    
+    
+.regist-note-form{
+        width:350px;
+}
+    
+/*--myNoteList--------------------------------------------*/
+.list-form-left{
+    width: 330px;
+}
+
+.list-form-right{
+    width: 50px;
+    float: right;
+}
+
+.panel-list{
+    width: 350px;
+    margin: 0 auto 0 auto;
+}
+
+.panel-list .panel{
+    width: 350px;
+    height: 350px;
+}
+
+.panel-value{
+    overflow: hidden;
+}
+
+.panel-left{
+    float: left;
+    margin: 0px 0 0 20px;
+    width:100%;
+}
+
+div .panel-title{
+    font-size: 25px;
+    width: 310px;
+}
+
+.panel-left .panel-category{
+    font-size: 20px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.panel-right{
+    float: right;
+    margin: 10px 10px 0 0;
+}
+
+.panel-right .panel-img{
+    height: 180px;
+    line-height: 180px;
+}
+
+.list-form{
+     width: 350px;
+}
+    
+
+    
+/*--noteList--------------------------------------------*/
+
+.panel-user{
+    font-size: 15px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.note-list-like{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 10px;
+    display: inline-block;
+}
+    
+.note-list-right .panel-img{
+    height: 180px;
+    line-height: 180px;
+}
+    
+.note-list .panel{
+    height: 380px;
+}
+    
+/*--oneNote--------------------------------------------*/
+
+.one-note-left{
+    margin: 0 auto;
+    float: none;
+}
+    
+.one-note-title{
+    font-size: 30px;
+    width: 350px;
+}
+
+.one-note-category p{
+    font-size: 20px;
+}
+
+.one-note-user{
+    font-size: 20px;
+    overflow: hidden;
+}
+
+.one-note-user{
+    font-size: 20px;
+    overflow: hidden;
+    line-height: 80px;
+}
+
+.one-note-user .one-note-icon img{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.one-note-user a{
+    float: left;
+    margin-left: 10px;
+}
+
+.one-note-img{
+    width: 350px;
+    margin: 0;
+}
+
+.one-note-img span{
+    user-select: none;
+}
+
+.one-note-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.one-note-right{
+    float: none;
+    margin: 0 auto;
+}
+
+.one-note-text{
+   width: 360px;
+    padding: 10px;
+    margin: 0;
+}
+
+.note-list-back{
+    font-size: 20px;
+    color: #2F4F4F;
+    float: right;
+}
+
+.one-note-like{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.one-note-like i:hover{
+    cursor:pointer;
+}
+
+.one-note-like .active{
+    color: #CC3300;
+}
+
+/*--deletecategory--------------------------------------------*/
+.category-select p{
+    width: 250px;
+}
+    
+/*--oneUser--------------------------------------------*/
+
+
+.one-user-profile{
+    width: 350px;
+}
+
+.one-user-profile .prof-name{
+    margin-top:10px;
+}
+    
+/*--footer--------------------------------------------*/
+footer{
+    font-size: 15px;
+    display: block;
+}
+
     
 }

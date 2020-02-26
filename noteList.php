@@ -58,7 +58,7 @@
             
            <div class="list-form-right">
                   
-             <span class="num"><?php echo sanitize($noteData['total']); ?></span>件表示
+             全<span class="num"><?php echo sanitize($noteData['total']); ?></span>件
               
            </div>
             
@@ -73,7 +73,7 @@
           </a>
         </span>
         
-        <section class="panel-list">
+        <section class="panel-list note-list">
             
           <?php
             foreach ($noteData['data'] as $key => $val):
@@ -87,11 +87,8 @@
                 
               <div class="panel-left">
                   
-                <div class="panel-category">カテゴリー<br><?php echo $val['category'];?></div>
-                  
-                <div class="note-list-like">
-                    <i class="fas fa-thumbs-up"></i>
-                    <?php echo isLikeLen($val['note_id']); ?>
+                <div class="panel-category">カテゴリー<br>
+                    <?php echo $val['category'];?>
                 </div>
                   
                 <div class="panel-user">
@@ -104,10 +101,16 @@
                     
                   <div class="user-name"><?php echo $val['name']?></div>
                     
+                </div>                  
+                  
+                <div class="note-list-like">
+                    <i class="fas fa-thumbs-up"></i>
+                    <?php echo isLikeLen($val['note_id']); ?>
                 </div>
+                                  
               </div>
                 
-              <div class="panel-right">
+              <div class="panel-right note-list-right">
                 <div class="panel-img">
                   <span style="<?php if(!empty($val['note_img'])){echo 'display:none';}?>">
                       NO IMAGE

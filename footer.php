@@ -1,5 +1,5 @@
 <footer id="footer">
-  Copyright <a href="http://portfolio-w.com/">作者</a>. All Rights Reserved.
+  Copyright MemoLand. All Rights Reserved.
 </footer>
 
 <script src="js/vendor/jquery-2.2.2.min.js"></script>
